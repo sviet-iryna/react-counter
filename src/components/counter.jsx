@@ -3,7 +3,7 @@ import { ListGroup } from "react-bootstrap";
 
 class Counter extends Component {
   state = {
-    count: 0,
+    count: this.props.value,
   };
 
   //   constructor() {
