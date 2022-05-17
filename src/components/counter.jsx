@@ -4,6 +4,7 @@ import { ListGroup } from "react-bootstrap";
 class Counter extends Component {
   state = {
     count: this.props.value,
+    // test
   };
 
   //   constructor() {
