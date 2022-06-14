@@ -11,7 +11,7 @@ class Counters extends Component {
       { id: 5, value: 0 },
     ],
   };
-  handeleAdd = (index, valueToAdd) => {
+  handleAdd = (index, valueToAdd) => {
     let newCounters = this.state.counters.map(function (elem) {
       if (index === elem.id) {
         elem.value = elem.value + valueToAdd;
@@ -22,13 +22,13 @@ class Counters extends Component {
   };
 
   handleIncrement = (index) => {
-    let newCounters = this.handeleAdd(index, 1);
-    this.setState({counters : newCounters});
+    let newCounters = this.handleAdd(index, 1);
+    this.setState({ counters: newCounters });
   };
 
   handleDecrement = (index) => {
-    let newCounters = this.handeleAdd(index, -1);
-    this.setState({counters : newCounters});
+    let newCounters = this.handleAdd(index, -1);
+    this.setState({ counters: newCounters });
   };
 
   render() {

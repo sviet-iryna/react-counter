@@ -12,7 +12,7 @@ class Counter extends Component {
   //   }
 
   render() {
-    console.log("props", this.props);
+    // console.log("props", this.props);
     // console.log(this.props);
     // this.props.handleIncrement(this.props.id);
     return (
